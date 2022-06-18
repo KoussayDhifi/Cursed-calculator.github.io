@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="calc.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="calc.js"></script>
     <title>Calculator</title>
 </head>
 <body>
@@ -12,32 +13,32 @@
     <div class="calc">
         <div class="line1">
         <div id="c" class="yellow">C</div>
-        <div id="res" class="black">0</div>
+        <div id="res" class="black" onclick="concat(this)">0</div>
         </div>
         <div class="line2">
-        <div id="7" class="black">7</div>
-        <div id="8" class="black">8</div>
-        <div id="9" class="black">9</div>
-        <div id="x" class="yellow">X</div>
+        <div id="7" class="black" onclick="concat(this)">7</div>
+        <div id="8" class="black" onclick="concat(this)">8</div>
+        <div id="9" class="black" onclick="concat(this)">9</div>
+        <div id="x" class="yellow" onclick="concat(this)">X</div>
         </div>
         <div class="line3">
-        <div id="4" class="black">4</div>
-        <div id="5" class="black">5</div>
-        <div id="6" class="black">6</div>
-        <div id="ov" class="yellow">/</div>
+        <div id="4" class="black" onclick="concat(this)">4</div>
+        <div id="5" class="black" onclick="concat(this)">5</div>
+        <div id="6" class="black" onclick="concat(this)">6</div>
+        <div id="ov" class="yellow" onclick="concat(this)">/</div>
         </div>
         <div class="line4">
-        <div id="1" class="black">1</div>
-        <div id="2" class="black">2</div>
-        <div id="3" class="black">3
+        <div id="1" class="black" onclick="concat(this)">1</div>
+        <div id="2" class="black" onclick="concat(this)">2</div>
+        <div id="3" class="black" onclick="concat(this)">3
         </div>
-        <div id="p" class="yellow">+</div>
+        <div id="p" class="yellow" onclick="concat(this)">+</div>
         </div>  
         <div class="line5">
-        <div id="float" class="black">.</div>
-        <div id="0" class="black">0</div>
-        <div id="eq" class="green">=</div>
-        <div id="-" class="yellow">-</div>
+        <div id="float" class="black" onclick="concat(this)">.</div>
+        <div id="0" class="black" onclick="concat(this)">0</div>
+        <div id="eq" class="green" onclick="calc()">=</div>
+        <div id="-" class="yellow" onclick="concat(this)">-</div>
         </div>
     </div>
 </body>
