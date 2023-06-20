@@ -14,7 +14,11 @@ const concat = (x) => {
     {
         msg = x.innerHTML;
     }
+    if (document.getElementById('res').innerHTML != 0) {
     document.getElementById('res').innerHTML = document.getElementById('res').innerHTML+msg;
+    }else {
+        document.getElementById('res').innerHTML = msg;
+    }
 }
 
 const calc = () => {
